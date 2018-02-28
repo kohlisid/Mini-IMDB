@@ -1,2 +1,3 @@
 # Mini-IMDB
-A ch
+
+A chrome extension for retrieving IMDB info of selected text on webpage
