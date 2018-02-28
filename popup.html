@@ -65,8 +65,8 @@ Released under the MIT license: http://jsbin.mit-license.org
     <div>
       <input type="radio" name="categ" value="movie" checked> Movie<br>
       <input type="radio" name="categ" value="series">Series<br>
-     </div>
-   
+    </div>
+
     <br>
     <input id="ttl" type="text"></input>
     <br>
@@ -78,13 +78,15 @@ Released under the MIT license: http://jsbin.mit-license.org
       <div class="left">
         <label for="title">Title</label>
         <br><br>
+        <label for="year">Year</label>
+        <br><br>
         <label for="rating">IMDB Rating</label>
         <br><br>
         <label for="director">Director</label>
         <br><br>
         <label for="cast">Cast</label>
         <br><br>
-        <label for="year">Year</label>
+        <label for="plot">Plot</label>
         <br><br>
       </div>
       <div class="right">
@@ -99,9 +101,14 @@ Released under the MIT license: http://jsbin.mit-license.org
 
         <input type="text" id="director" readonly></input>
         <br><br>
+
+        <textarea id="cast" readonly></textarea>
+        <br><br>
+        
+        <textarea id="plot" readonly></textarea>
+        <br><br>
       </div>
-      <textarea id="cast" readonly></textarea>
-      <br><br>
+      
       <img src="http://www.primusdatabase.com/images/4/49/Not_Available.png" id="pos"></img>
       <br><br>
 
