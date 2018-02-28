@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by anonymous (http://jsbin.com/cuxutaxuso/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="popup.js"></script>
+  <title>JS Bin</title>
+  <style id="jsbin-css">
+  .container{
+    text-align:center;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+  .container h3{
+    font-weight: normal;
+    color:black;
+    text-decoration: underline;
+  }
+  img{
+    border: 2px solid black;
+    border-radius: 20px;
+    opacity: 0.5;
+    transition : 0.25 ease-in-out;
+  }
+  img:hover{
+    opacity:1;
+  }
+  button{
+    width:300px;
+    height: 50px;
+    font-size: 20px;
+    color:white;
+    background-color:black;
+    outline:none; 
+  }
+  button:hover{
+    background-color:green;
+  }
+  .left {
+    width: 30%;
+    float: left;
+    text-align: right;
+  }
+  .right {
+    width: 65%;
+    margin-left: 10px;
+    float:left;
+  }
+</style>
+</head>
+<body>
+  <div class="container" id="main">
+
+    <h3>Enter Name/Or select text in webpage:</h3>
+    <div>
+      <input type="radio" name="categ" value="movie" checked> Movie<br>
+      <input type="radio" name="categ" value="series">Series<br>
+     </div>
+   
+    <br>
+    <input id="ttl" type="text"></input>
+    <br>
+    <hr>
+    <br>
+    <div class="container" id="ans" style="display: none;">
+
+      <br><br>
+      <div class="left">
+        <label for="title">Title</label>
+        <br><br>
+        <label for="rating">IMDB Rating</label>
+        <br><br>
+        <label for="director">Director</label>
+        <br><br>
+        <label for="cast">Cast</label>
+        <br><br>
+        <label for="year">Year</label>
+        <br><br>
+      </div>
+      <div class="right">
+        <input type="text" id="title" readonly></input>
+        <br><br>
+
+        <input type="text" id="year" readonly></input>
+        <br><br>
+
+        <input type="text" id="rating" readonly></input>
+        <br><br>
+
+        <input type="text" id="director" readonly></input>
+        <br><br>
+      </div>
+      <textarea id="cast" readonly></textarea>
+      <br><br>
+      <img src="http://www.primusdatabase.com/images/4/49/Not_Available.png" id="pos"></img>
+      <br><br>
+
+    </div>
+    <button id="bttn">Find</button>
+  </div>
+  
+  
+
+
+</body>
+</html>
